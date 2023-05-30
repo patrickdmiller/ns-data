@@ -17,10 +17,15 @@ class Nightscout:
     self.mongo_uri = 'mongodb://%s:%s@%s:%s/%s' % (username, password, host, port, db)
     self.dbConnection = MongoClient(self.mongo_uri)
 
+  #return all rows of collection > more for debugging.
   def find(self, collection="entries", query={}, limit=0):
     cursor = self.dbConnection[DB][collection].find(query).limit(limit)
     df =  pd.DataFrame(list(cursor))
     return df
+
+
+  # def entries
+
 
 if __name__ == "__main__":
   ns = Nightscout()

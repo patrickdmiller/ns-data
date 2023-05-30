@@ -24,6 +24,11 @@ export class Nightscout{
     }catch(err){
       logError(err);
     }
+
+    logDebug("ns init complete")
+    //list all collections
+    const collections = await this.dbConnection.collections();
+    logDebug("collections", collections.map(c=>c.collectionName));
   }
 
   async fetch(collection = "entries"){
