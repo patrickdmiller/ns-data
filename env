@@ -1,0 +1,5 @@
+NSHOST=nightscout
+NSUSER=nightscout
+NSPASSWORD=nightscout
+NSDB=Nightscout
+NSPORT=27017

@@ -23,8 +23,10 @@ class Nightscout:
     df =  pd.DataFrame(list(cursor))
     return df
 
-
-  # def entries
+  # build function for each collection, wrapper that calls find
+  #entries
+  #treatments
+  
 
 
 if __name__ == "__main__":
