@@ -1,0 +1,3 @@
+[submodule "nightscout_socketio_client"]
+	path = nightscout_socketio_client
+	url = git@github.com:patrickdmiller/nightscout_socketio_client.git
